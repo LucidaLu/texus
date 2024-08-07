@@ -1,21 +1,27 @@
 {
   "latex-workshop.latex.recipes": [
     {
-      "name": "xelatex",
-      "tools": [
-        "xelatex"
-      ]
-    },
-    {
       "name": "pdflatex",
       "tools": [
         "pdflatex"
       ]
     },
     {
+      "name": "xelatex",
+      "tools": [
+        "xelatex"
+      ]
+    },
+    {
       "name": "lualatex",
       "tools": [
         "lualatex"
+      ]
+    },
+    {
+      "name": "bibtex",
+      "tools": [
+        "bibtex"
       ]
     },
     {
