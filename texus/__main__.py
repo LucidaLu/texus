@@ -8,7 +8,8 @@ from pathlib import Path
 def create(name, template, recipe):
     template_home = Path.home() / ".texus/templates"
     recipe_home = Path.home() / ".texus/recipes"
-    os.system(f"cp -r {template_home}/{template} {name}")
+    os.mkdir(name)
+    os.system(f"cp -r {template_home}/{template}/* '{name}'")
     os.chdir(name)
     os.mkdir(".vscode")
     os.system(f"cp {recipe_home}/{recipe} .vscode/settings.json")
