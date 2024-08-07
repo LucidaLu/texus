@@ -1,7 +1,12 @@
 # TeXus: a helper for working with latex using vscode
 
 ## Functionality
-1. `create`: create a new latex project using given template and vscode recipe.
+
+### `create`
+Create a new latex project using given template and vscode recipe. Example:
+```
+texus create 'Demo Project' -t article -r xelatex
+```
 
 ## Installation
 ```
