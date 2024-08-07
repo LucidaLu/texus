@@ -1,4 +1,4 @@
-# TeXus: a helper for working with latex using vscode
+# $\TeX \mathrm{us}$ : a helper for working with latex using vscode
 
 ## Functionality
 
