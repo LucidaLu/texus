@@ -16,6 +16,11 @@ def create(name, template, recipe):
     os.system(f"code .")
 
 
+def sync(msg):
+
+    pass
+
+
 temps = sorted(os.listdir(Path.home() / ".texus/templates"))
 recipes = sorted(os.listdir(Path.home() / ".texus/recipes"))
 
@@ -56,11 +61,20 @@ def main():
         metavar="recipe",
     )
 
+    parser.add_argument(
+        "-m",
+        "--message",
+        help="Commit message for sync process.",
+        metavar="message",
+    )
+
     argcomplete.autocomplete(parser)
 
     args = parser.parse_args()
     if args.operation == "create":
         create(args.name, args.template, args.recipe)
+    elif args.operation == "sync":
+        sync(args.message)
 
 
 if __name__ == "__main__":
