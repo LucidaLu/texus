@@ -5,8 +5,16 @@
 ### `create`
 Create a new latex project using given template and vscode recipe. Example:
 ```
-texus create 'Demo Project' -t article -r xelatex
+texus create -n 'Demo Project' -t article -r xelatex
 ```
+
+### sync
+Commit changes in current git repository and push to remote. Example:
+```
+texus sync -m "commit message"
+texus sync
+```
+The latter command will be useful when used in combanation with LLM commit message generator like [zurawiki/gptcommit](https://github.com/zurawiki/gptcommit).
 
 ## Installation
 ```

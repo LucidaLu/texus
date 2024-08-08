@@ -17,8 +17,12 @@ def create(name, template, recipe):
 
 
 def sync(msg):
-
-    pass
+    os.system("git add .")
+    if msg is None:
+        os.system("git commit")
+    else:
+        os.system(f"git commit -m '{msg}'")
+    os.system("git push")
 
 
 temps = sorted(os.listdir(Path.home() / ".texus/templates"))
@@ -38,8 +42,9 @@ def main():
     )
 
     parser.add_argument(
-        "name",
-        help="Project name.",
+        "-n",
+        "--name",
+        help="Project name (required for create).",
         metavar="name",
     )
 
