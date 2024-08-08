@@ -1,5 +1,5 @@
-# TeXus: a helper for working with latex using vscode
-
+# TexUS: a helper for working with latex using vscode
+$$\Huge \TeX\mathrm{us}$$
 ## Functionality
 
 ### `create`
